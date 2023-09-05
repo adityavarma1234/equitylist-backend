@@ -1,24 +1,8 @@
-# README
+# Backend for equitylist
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+```
+bundle install
+rails runner db/seed_data.rb # to seed data
+```
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Here account has many ledger transactions which inturn has source, requester and destination. Based on the transaction the account balance keeps getting updated
